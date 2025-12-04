@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/resume.css" />
+
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeIn 1s ease-out; }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+    .slide-in { animation: slideIn 0.5s ease-out forwards; }
+
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @keyframes footerIconAnim {
+      0% { transform: scale(1); opacity: 0.7; }
+      100% { transform: scale(1.2); opacity: 1; }
+    }
+    .footer-icon:hover {
+      animation: footerIconAnim 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <div class="flex">
+    <!-- Sidebar Menu -->
+    <div class="w-1/4 bg-gray-800 text-white p-6 slide-in">
+      <div class="text-center">
+        <img src="./image/pic.jpg" width="150" alt="Nanda Balaji" class="rounded-full mb-4 hover-scale"/>
+      </div>
+      <ul class="space-y-4">
+        <li><a href="./index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="./about-me.html" class="hover:text-yellow-400">About Me</a></li>
+        <li><a href="./resume.html" class="hover:text-yellow-400">Experience & Achievements</a></li>
+        <li><a href="./portfolio.html" class="hover:text-yellow-400">Projects</a></li>
+        <li><a href="./contact.html" class="text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="w-3/4 p-8">
+      <h1 class="text-3xl font-bold text-center mb-6 fade-in">CONTACT</h1>
+
+      <div class="text-center mb-8 fade-in">
+        <h2 class="text-xl font-semibold text-gray-700">Feel <span class="text-yellow-500">free</span> to contact me</h2>
+        <p class="text-gray-600 mt-2"></p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+        <!-- Contact Info 1 -->
+        <div class="flex items-center space-x-4  bg-gradient-to-r from-green-400 via-blue-500 p-6 shadow-lg rounded-xl hover-scale transition-all">
+          <i class="fa-solid fa-envelope text-2xl text-yellow-500"></i>
+          <div>
+            <p class="font-semibold">Gmail</p>
+            <p class="text-gray-500">sandakayasaswi2003@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Contact Info 2 -->
+        <div class="flex items-center space-x-4  bg-gradient-to-r from-indigo-600 via-purple-600 p-6 rounded-xl hover-scale transition-all">
+          <i class="fa-solid fa-phone text-2xl text-yellow-500"></i>
+          <div>
+            <p class="font-semibold">Phone</p>
+            <p class="text-gray-500">+919848272827</p>
+          </div>
+        </div>
+
+        <!-- Contact Info 3 -->
+        <div class="flex items-center space-x-4 bg-gradient-to-r from-red-500 to-pink-500 p-6 shadow-lg rounded-xl hover-scale transition-all ">
+          <i class="fa-brands fa-linkedin text-2xl text-yellow-500"></i>
+          <div>
+            <p class="font-semibold">LinkedIn</p>
+            <p class="text-gray-500 break-words">https://www.linkedin.com/in/yasaswi-sandaka-3957612a2</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-xl text-center mt-8 font-semibold fade-in">Thank You For Your Patience!</h2>
+    </div>
+  </div>
+
+  <!-- Footer Icon Menu -->
+  <div class="fixed bottom-0 left-0 right-0 bg-gray-800 p-4">
+    <ul class="flex justify-around text-white">
+      <li><a href="./index.html" class="footer-icon"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="./about-me.html" class="footer-icon"><i class="fa-solid fa-user"></i></a></li>
+      <li><a href="./resume.html" class="footer-icon"><i class="fa-solid fa-briefcase"></i></a></li>
+      <li><a href="./portfolio.html" class="footer-icon"><i class="fa-solid fa-desktop"></i></a></li>
+      <li><a href="./contact.html" class="footer-icon text-yellow-400"><i class="fa-regular fa-paper-plane"></i></a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    /* Sidebar slide animation */
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+
+    .slide-in {
+      animation: slideIn 0.5s ease-out forwards;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <div class="flex">
+    <!-- Sidebar Menu -->
+    <div class="w-1/4 bg-gradient-to-t from-gray-800 via-gray-700 to-gray-600 text-white p-6 slide-in">
+      <div class="text-center">
+        <img src="./image/pic.jpg" width="150" alt="Nanda Balaji" class="rounded-full mb-4 hover-scale" />
+      </div>
+      <ul class="space-y-4">
+        <li><a href="./index.html" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="./about-me.html" class="text-yellow-400">About Me</a></li>
+        <li><a href="./resume.html" class="hover:text-yellow-400">Experience & Achievements</a></li>
+        <li><a href="./portfolio.html" class="hover:text-yellow-400">Projects</a></li>
+        <li><a href="./contact.html" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="w-3/4 p-8 bg-white shadow-lg rounded-lg fade-in">
+      <h1 class="text-4xl font-bold text-center mb-8 text-indigo-600">About Me</h1>
+      
+      <div class="mb-12">
+        <h2 class="text-3xl font-semibold mb-4 text-gray-800">I'm <span class="text-yellow-500">Sandaka YAsaswi</span>, Web Developer</h2>
+        <p class="text-lg text-gray-700">Aspiring software engineer with expertise in Java and Python, passionate about developing high-quality 
+          software solutions and contributing to team and process improvements.</p>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white shadow-lg rounded-lg hover-scale">
+          <h3 class="text-xl font-semibold mb-4">Education</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="text-center border-r border-dotted">
+              <h3 class="text-3xl font-semibold">
+                <span class="countfect" data-num="8.0"> </span>
+                <span class="text-yellow-500 text-xl">CGPA</span>
+              </h3>
+              <p>B.Sc from K.B.N College</p>
+            </div>
+            
+            <div class="text-center">
+              <h3 class="text-3xl font-semibold">
+                <span class="countfect" data-num="834"> marks </span>
+                <span class="text-yellow-500 text-xl">marks </span>
+              </h3>
+              <p>12th from KBN College</p>
+            </div>
+            
+            <div class="text-center border-t border-dotted pt-6">
+              <h3 class="text-3xl font-semibold">
+                <span class="countfect" data-num="8.8"> CGPA </span>
+                <span class="text-yellow-500 text-xl">CGPA</span>
+              </h3>
+              <p>10th from Noori Model English Medium High School</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- What I Do Section -->
+        <div class="p-6 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white shadow-lg rounded-lg hover-scale">
+          <h2 class="text-2xl font-semibold mb-4">TECHNICAL SKILLS</h2>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <i class="fa-solid fa-download text-yellow-500 text-3xl mr-4"></i>
+              <div>
+                <h4 class="font-semibold">Languages</h4>
+                <p> Java (Basics), Python,  SQL, Tableau </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i class="fa-solid fa-download text-yellow-500 text-3xl mr-4"></i>
+              <div>
+                <h4 class="font-semibold">Web Development</h4>
+                <p> HTML, CSS, Java Script, MongoDB</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i class="fa-solid fa-download text-yellow-500 text-3xl mr-4"></i>
+              <div>
+                <h4 class="font-semibold">Tools</h4>
+                <p> VS Code, Eclipse, Tableau</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Icon Menu -->
+  <div class="fixed bottom-0 left-0 right-0 bg-gray-800 p-4 fade-in">
+    <ul class="flex justify-around text-white">
+      <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="./about-me.html"><i class="fa-solid fa-user text-yellow-500"></i></a></li>
+      <li><a href="./resume.html"><i class="fa-solid fa-briefcase"></i></a></li>
+      <li><a href="./portfolio.html"><i class="fa-solid fa-desktop"></i></a></li>
+      <li><a href="./contact.html"><i class="fa-regular fa-paper-plane"></i></a></li>
+    </ul>
+  </div>
+
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script src="./countfect.min.js"></script>
+
+</body>
+</html>
